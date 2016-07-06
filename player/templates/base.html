@@ -34,9 +34,9 @@
 			</ul>
 		
 
-			<form class="navbar-form navbar-left" role="search" method="	get" action="#">
+			<form class="navbar-form navbar-left" role="search" method="	get" action="{% url 'index' %}">
 				<div class="form-group">
-					<input type="text" class="form-comtrol" name="q" value="">
+					<input type="text" class="form-comtrol" name="q" value="{{ request.GET.q }}">
 				</div>
 				<button type="submit" class="btn btn-default">Search</button>
 			</form>
