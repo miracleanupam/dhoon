@@ -1,0 +1,10 @@
+<h3>Displaying all songs of the user.</h3><br>
+{% for s in songs_are %}
+{{ s.name }}<br>
+<audio controls>
+	
+	<source src="{{ s.audio.url }}" type="audio/mpeg">
+
+</audio>
+<br>
+{% endfor %}
